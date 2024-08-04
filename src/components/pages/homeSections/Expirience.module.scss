@@ -1,0 +1,185 @@
+.Expirience {
+  // height: 100vh;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #00114b 48%,
+    #00114b 52%,
+    #000000 100%
+  );
+
+  // background-image: url("https://images.alphacoders.com/131/1314400.jpg");
+  background-image: url("../../../assets/skillfon.jpg");
+
+  background-size: cover;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    .skillText {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      h1 {
+        font-size: 60px;
+      }
+      .line {
+        width: 200px;
+        height: 2px;
+        background: white;
+      }
+    }
+
+    .skillImages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+
+      .block {
+        text-align: center;
+        .box {
+          background: rgb(0, 0, 131);
+          padding: 20px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.5s;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .box:hover {
+          box-shadow: 0 0 10px #2ca4df, 0 0 20px #2ca4df, 0 0 30px #2ca4df;
+          transition: 0.5s;
+        }
+        h3 {
+          font-weight: 500;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .Expirience {
+    .content {
+      .skillText {
+        h1 {
+          font-size: 30px;
+        }
+        .line {
+          width: 120px;
+        }
+      }
+
+      .skillImages {
+        gap: 20px;
+
+        .block {
+          .box {
+            padding: 20px;
+            border-radius: 50%;
+
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+          .box:hover {
+          }
+          h3 {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Expirience {
+    .content {
+      .skillText {
+        gap: 25px;
+        h1 {
+          font-size: 30px;
+        }
+        .line {
+          width: 80px;
+        }
+      }
+
+      .skillImages {
+        gap: 10px;
+
+        .block {
+          .box {
+            padding: 15px;
+            border-radius: 50%;
+
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+
+          h3 {
+            margin-top: px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Expirience {
+    .content {
+      .skillText {
+        gap: 25px;
+        h1 {
+          font-size: 20px;
+        }
+        .line {
+          width: 50px;
+          display: none;
+        }
+      }
+
+      .skillImages {
+        gap: 10px;
+
+        .block {
+          .box {
+            padding: 10px;
+            border-radius: 50%;
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          h3 {
+            margin-top: px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

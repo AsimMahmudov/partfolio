@@ -1,0 +1,667 @@
+.Work {
+  // height: 200vh;
+  background: rgb(0, 247, 255);
+  padding: 100px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #00114b 48%,
+    #00114b 52%,
+    #000000 100%
+  );
+
+  .content {
+    .box {
+      display: flex;
+      .workImg {
+        img {
+          width: 600px;
+          height: 100%;
+          border-radius: 30px;
+          margin-left: 30px;
+        }
+      }
+      .workText {
+        margin-top: 10px;
+        margin-left: 30px;
+        h1 {
+          font-size: 60px;
+        }
+        p {
+          font-size: 35px;
+          font-weight: 300;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .box2 {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-top: 50px;
+
+      .workText {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        // background: blue;
+        width: 700px;
+
+        .tochkiimg {
+          img {
+            transform: rotate(90deg);
+            margin-left: -230px;
+            margin-top: -137px;
+          }
+        }
+        .boxwork {
+          display: flex;
+          align-items: center;
+          gap: 100px;
+          margin-left: -85px;
+
+          .arrow {
+            h1 {
+              font-size: 120px;
+              color: rgb(0, 97, 161);
+            }
+          }
+          .text {
+            text-align: end;
+            h1 {
+              font-size: 60px;
+            }
+            p {
+              font-size: 35px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .workImg {
+        img {
+          width: 500px;
+          border-radius: 30px;
+          margin-left: -100px;
+          height: 100%;
+        }
+      }
+    }
+
+    .box3 {
+      display: flex;
+      margin-top: 50px;
+      justify-content: space-between;
+      .workImg {
+        display: flex;
+        gap: 30px;
+        img {
+          width: 450px;
+          height: 100%;
+          border-radius: 30px;
+          margin-left: 30px;
+        }
+        .text {
+          margin-top: 100px;
+          h1 {
+            font-size: 60px;
+          }
+          p {
+            font-size: 35px;
+            font-weight: 300;
+            margin-left: 10px;
+          }
+        }
+      }
+      .workText {
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        // min-width: 760px;
+        justify-content: space-between;
+        align-items: center;
+
+        .tochkiimg {
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .Work {
+    .content {
+      .box {
+        .workImg {
+          img {
+            width: 500px;
+            border-radius: 20px;
+            margin-left: 30px;
+          }
+        }
+        .workText {
+          margin-top: 20px;
+          margin-left: 30px;
+          h1 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 30px;
+            font-weight: 300;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .box2 {
+        margin-top: 50px;
+        .workText {
+          margin-top: 10px;
+          margin-left: 130px;
+          width: 500px;
+
+          .tochkiimg {
+            img {
+              margin-left: -200px;
+              margin-top: -137px;
+            }
+          }
+          .boxwork {
+            gap: 70px;
+            margin-left: -185px;
+
+            .arrow {
+              h1 {
+                font-size: 120px;
+              }
+            }
+            .text {
+              h1 {
+                font-size: 50px;
+              }
+              p {
+                font-size: 35px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .workImg {
+          img {
+            width: 400px;
+            border-radius: 30px;
+            margin-left: -100px;
+          }
+        }
+      }
+
+      .box3 {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        // gap: 400px;
+        .workImg {
+          img {
+            width: 400px;
+            border-radius: 30px;
+            // margin-left: 30px;
+          }
+          .text {
+            h1 {
+              font-size: 45px;
+            }
+            p {
+              font-size: 35px;
+              font-weight: 300;
+              margin-left: 10px;
+            }
+          }
+        }
+        .workText {
+          margin-top: 10px;
+          // margin-left: 300px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .tochkiimg {
+            img {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .Work {
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .workImg {
+          padding: 50px;
+
+          img {
+            width: 100%;
+            border-radius: 20px;
+            margin-left: 0px;
+          }
+        }
+        .workText {
+          margin-top: 20px;
+          margin-left: 0px;
+          h1 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 30px;
+            font-weight: 300;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .box2 {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .workText {
+          margin-top: 10px;
+          margin-left: 180px;
+          width: 180px;
+
+          .tochkiimg {
+            img {
+              margin-left: -200px;
+              margin-top: -137px;
+              display: none;
+            }
+          }
+          .boxwork {
+            gap: 0px;
+            // margin-left: -185px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+
+            .arrow {
+              margin-top: 25px;
+
+              h1 {
+                font-size: 90px;
+              }
+            }
+            .text {
+              h1 {
+                font-size: 40px;
+              }
+              p {
+                font-size: 30px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .workImg {
+          padding: 50px;
+
+          img {
+            width: 100%;
+            border-radius: 30px;
+            margin-left: 0px;
+          }
+        }
+      }
+      .box3 {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // gap: 400px;
+        .workImg {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 50px;
+          img {
+            width: 100%;
+            border-radius: 30px;
+            margin-left: -5px;
+          }
+          .text {
+            margin-top: -10px;
+            h1 {
+              font-size: 40px;
+            }
+            p {
+              font-size: 35px;
+              font-weight: 300;
+              margin-left: 10px;
+            }
+          }
+        }
+        .workText {
+          margin-top: 10px;
+          // margin-left: 300px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          justify-content: center;
+
+          .tochkiimg {
+            margin-top: -120px;
+            margin-left: -25px;
+            img {
+              width: 115px;
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Work {
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .box {
+        display: flex;
+        flex-direction: column;
+        .workImg {
+          img {
+            width: 100%;
+            border-radius: 20px;
+            margin-left: 0px;
+          }
+        }
+        .workText {
+          margin-top: 20px;
+          margin-left: 0px;
+          h1 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 25px;
+            font-weight: 300;
+            margin-left: 0px;
+          }
+        }
+      }
+
+      .box2 {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .workText {
+          margin-top: 10px;
+          margin-left: 180px;
+          width: 180px;
+
+          .tochkiimg {
+            img {
+              margin-left: -200px;
+              margin-top: -137px;
+              display: none;
+            }
+          }
+          .boxwork {
+            gap: 0px;
+            // margin-left: -185px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+
+            .arrow {
+              margin-top: 25px;
+
+              h1 {
+                font-size: 60px;
+              }
+            }
+            .text {
+              h1 {
+                font-size: 30px;
+              }
+              p {
+                font-size: 20px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .workImg {
+          img {
+            width: 100%;
+
+            border-radius: 30px;
+            margin-left: 0px;
+          }
+        }
+      }
+      .box3 {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // gap: 400px;
+        .workImg {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            border-radius: 30px;
+            margin-left: -5px;
+          }
+          .text {
+            margin-top: -10px;
+            h1 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 25px;
+              font-weight: 300;
+              margin-left: -2px;
+            }
+          }
+        }
+        .workText {
+          margin-top: 10px;
+          // margin-left: 300px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          justify-content: center;
+
+          .tochkiimg {
+            margin-top: -100px;
+            margin-left: -25px;
+            img {
+              width: 100px;
+              height: 290px;
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Work {
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .box {
+        display: flex;
+        flex-direction: column;
+        .workImg {
+          padding: 10px;
+          img {
+            width: 100%;
+            border-radius: 20px;
+            margin-left: 0px;
+          }
+        }
+        .workText {
+          margin-top: 20px;
+          margin-left: 0px;
+          h1 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 0px;
+          }
+        }
+      }
+
+      .box2 {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .workText {
+          margin-top: 10px;
+          margin-left: 150px;
+          width: 90px;
+
+          .tochkiimg {
+            img {
+              margin-left: -200px;
+              margin-top: -137px;
+              display: none;
+            }
+          }
+          .boxwork {
+            gap: 0px;
+            margin-left: -145px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+
+            .arrow {
+              margin-top: 25px;
+
+              h1 {
+                font-size: 60px;
+              }
+            }
+            .text {
+              h1 {
+                font-size: 22px;
+                // margin-left: 20px;
+              }
+              p {
+                font-size: 20px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .workImg {
+          padding: 10px;
+
+          img {
+            width: 100%;
+            border-radius: 30px;
+            margin-left: 0px;
+          }
+        }
+      }
+      .box3 {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // gap: 400px;
+        .workImg {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+
+          img {
+            width: 100%;
+            border-radius: 30px;
+            margin-left: -5px;
+          }
+          .text {
+            margin-top: -10px;
+            h1 {
+              font-size: 25px;
+            }
+            p {
+              font-size: 20px;
+              font-weight: 300;
+              margin-left: 10px;
+            }
+          }
+        }
+        .workText {
+          margin-top: 10px;
+          // margin-left: 300px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          justify-content: center;
+
+          .tochkiimg {
+            margin-top: -80px;
+            margin-left: -25px;
+            img {
+              width: 80px;
+              height: 230px;
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

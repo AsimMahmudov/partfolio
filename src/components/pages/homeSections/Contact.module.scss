@@ -1,0 +1,346 @@
+.Contact {
+  // height: 100vh;
+  background: green;
+  padding: 100px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #00114b 48%,
+    #00114b 52%,
+    #000000 100%
+  );
+  background-size: cover;
+  // background-image: url("https://wallpaperset.com/w/full/2/8/2/529703.jpg");
+  background-image: url("../../../assets/contactfon.jpg");
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contactText {
+      h1 {
+        font-size: 50px;
+      }
+    }
+    .contacts {
+      display: flex;
+      gap: 100px;
+
+      .contactForm {
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .box {
+            input {
+              padding: 15px;
+              width: 500px;
+              height: 50px;
+              border: none;
+              border-radius: 30px;
+              margin-top: 5px;
+              background: #000c3591;
+              border: solid rgb(0, 55, 235) 2px;
+            }
+            p {
+              margin-top: 20px;
+              margin-left: 15px;
+            }
+
+            .message {
+              height: 160px;
+              color: white;
+            }
+          }
+          button {
+            padding: 15px 40px;
+            margin-top: 40px;
+            background: #00000000;
+            border: solid rgb(0, 94, 235) 3px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            background: #00114b;
+          }
+          button:hover {
+            box-shadow: 0 0 10px rgb(0, 94, 235), 0 0 20px rgb(0, 94, 235);
+            transition: 0.2s;
+          }
+          button:active {
+            background: rgb(0, 94, 235);
+            color: #000000;
+            transition: 0.1s;
+          }
+        }
+      }
+      .tochki {
+        margin-top: 10px;
+        img {
+          width: 150px;
+          height: 510px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .Contact {
+    .content {
+      .contactText {
+        h1 {
+          font-size: 50px;
+        }
+      }
+      .contacts {
+        gap: 50px;
+
+        .contactForm {
+          form {
+            .box {
+              input {
+                padding: 15px;
+                width: 500px;
+                height: 50px;
+              }
+              p {
+                margin-top: 20px;
+                margin-left: 15px;
+              }
+
+              .message {
+                height: 160px;
+              }
+            }
+            button {
+              padding: 15px 40px;
+              margin-top: 40px;
+              border-radius: 50px;
+              font-size: 16px;
+            }
+            button:hover {
+            }
+            button:active {
+              transition: 0.1s;
+            }
+          }
+        }
+        .tochki {
+          margin-top: 30px;
+          img {
+            width: 110px;
+            height: 430px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .Contact {
+    .content {
+      .contactText {
+        h1 {
+          font-size: 35px;
+        }
+      }
+      .contacts {
+        gap: 50px;
+
+        .contactForm {
+          form {
+            .box {
+              input {
+                padding: 15px;
+                width: 400px;
+                height: 50px;
+              }
+              p {
+                margin-top: 20px;
+                margin-left: 15px;
+              }
+
+              .message {
+                height: 120px;
+              }
+            }
+            button {
+              padding: 15px 40px;
+              margin-top: 40px;
+              border-radius: 50px;
+              font-size: 16px;
+            }
+            button:hover {
+            }
+            button:active {
+              transition: 0.1s;
+            }
+          }
+        }
+        .tochki {
+          margin-top: 100px;
+          img {
+            width: 100px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .Contact {
+    .content {
+      .contactText {
+        h1 {
+          font-size: 35px;
+        }
+      }
+      .contacts {
+        gap: 50px;
+
+        .contactForm {
+          form {
+            .box {
+              input {
+                padding: 15px;
+                width: 400px;
+                height: 50px;
+              }
+              p {
+                margin-top: 20px;
+                margin-left: 15px;
+              }
+
+              .message {
+                height: 120px;
+              }
+            }
+            button {
+              padding: 15px 40px;
+              margin-top: 40px;
+              border-radius: 50px;
+              font-size: 16px;
+            }
+            button:hover {
+            }
+            button:active {
+              transition: 0.1s;
+            }
+          }
+        }
+        .tochki {
+          margin-top: 100px;
+          img {
+            width: 100px;
+            height: 300px;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Contact {
+    .content {
+      .contactText {
+        h1 {
+          font-size: 25px;
+        }
+      }
+      .contacts {
+        gap: 0px;
+
+        .contactForm {
+          form {
+            .box {
+              input {
+                padding: 15px;
+                width: 300px;
+                height: 40px;
+                border-radius: 20px;
+              }
+              p {
+                margin-top: 10px;
+                margin-left: 15px;
+                font-size: 12px;
+              }
+
+              .message {
+                height: 120px;
+              }
+            }
+            button {
+              padding: 10px 20px;
+              margin-top: 20px;
+              border-radius: 50px;
+              font-size: 12px;
+            }
+
+            button:active {
+              transition: 0.1s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Contact {
+    .content {
+      .contactText {
+        h1 {
+          font-size: 20px;
+        }
+      }
+      .contacts {
+        gap: 0px;
+
+        .contactForm {
+          form {
+            .box {
+              input {
+                padding: 15px;
+                width: 240px;
+                height: 40px;
+                border-radius: 15px;
+              }
+              p {
+                margin-top: 10px;
+                margin-left: 15px;
+                font-size: 12px;
+              }
+
+              .message {
+                height: 100px;
+              }
+            }
+            button {
+              padding: 10px 20px;
+              margin-top: 20px;
+              border-radius: 50px;
+              font-size: 12px;
+            }
+
+            button:active {
+              transition: 0.1s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

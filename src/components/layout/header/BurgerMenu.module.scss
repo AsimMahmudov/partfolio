@@ -1,0 +1,131 @@
+.burger_menu {
+  position: absolute;
+  top: 89px;
+  right: -300px;
+  width: 270px;
+  height: 270px;
+  // padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 0 0 20px;
+
+  background: rgba(41, 41, 92, 0.699);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 94, 235, 0.315), 0 0 20px rgb(0, 94, 235);
+  border: solid rgb(0, 81, 255) 4px;
+
+  transition: 0.5s;
+  &.active {
+    right: 0px;
+    padding: 20px;
+  }
+}
+
+.content {
+  .nav {
+    ul {
+      li {
+        a {
+          // background: red;
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+        }
+      }
+    }
+    .buutons {
+      display: flex;
+      gap: 5px;
+      margin-left: -20px;
+      margin-top: 10px;
+
+      a {
+        padding: 5px 10px;
+        background: #00000000;
+        border: solid rgb(0, 94, 235) 3px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        box-shadow: 0 0 10px rgb(0, 94, 235), 0 0 20px rgb(0, 94, 235);
+        transition: 0.2s;
+      }
+      a:active {
+        background: rgb(0, 94, 235);
+        color: #000000;
+        transition: 0.1s;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .burger_menu {
+    position: absolute;
+    top: 89px;
+    right: -300px;
+    width: 200px;
+    height: 240px;
+    // padding: 40px;
+  }
+
+  .content {
+    .nav {
+      ul {
+        li {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+      .buutons {
+        margin-left: -20px;
+        margin-top: 10px;
+
+        a {
+          padding: 5px 10px;
+
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .burger_menu {
+    position: absolute;
+    top: 89px;
+    right: -300px;
+    width: 160px;
+    height: 200px;
+    // padding: 40px;
+  }
+
+  .content {
+    .nav {
+      ul {
+        li {
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+      .buutons {
+        margin-left: -20px;
+        margin-top: 10px;
+
+        a {
+          padding: 5px 10px;
+
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
